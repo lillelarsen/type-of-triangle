@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Type of triangle</title>
+</head>
+<body>
+    <header class="header bg-dark p-3">
+        <a href="#" class="text-uppercase font-weight-bold text-info">Type-of-triangle calculator</a>
+    </header>
+    <main class="container d-flex justify-content-center flex-wrap pt-5">
+        <form id="calculatorForm" class="w-75 d-flex justify-content-center flex-wrap">
+            <fieldset class="form-group card p-3">
+                <label for="sideA" class="rounded bg-info p-1 pl-2 text-white">Side A:</label>
+                <input type="number" name="sideA" id="sideA" step="0.01" min="0" max="1000" placeholder="example: 10" class="form-control">
+            </fieldset>
+            <fieldset class="form-group card p-3">
+                <label for="sideB" class="rounded bg-info p-1 pl-2 text-white">Side B:</label>
+                <input type="number" name="sideB" id="sideB" step="0.01" min="0" max="1000" placeholder="example: 20" class="form-control">
+            </fieldset>
+            <fieldset class="form-group card p-3">
+                <label for="sideC" class="rounded bg-info p-1 pl-2 text-white">Side C:</label>
+                <input type="number" name="sideC" id="sideC" step="0.01" min="0" max="1000" placeholder="example: 30" class="form-control">
+            </fieldset>
+            <button type="submit" class="mx-auto w-75 btn btn-dark">Calculate</button>
+        </form>
+        <p id="error" class="w-100 text-center mt-4"></p>
+        <p id="result" class="w-100 text-center mt-4"></p>
+        <img id="triangleImage" src="">
+    </main>
+<script src="js/countEquals.js" defer></script>
+<script src="js/triangleCalculator.js" defer></script>
+<script src="js/formEvent.js" defer></script>
+</body>
+</html>
